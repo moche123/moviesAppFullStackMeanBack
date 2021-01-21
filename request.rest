@@ -1,0 +1,25 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name": "Moises",
+    "username": "moche123",
+    "password": "HolaSoyMoises"
+}
+###
+
+GET http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vY2hlMTIzIiwicGFzc3dvcmQiOiJIb2xhU295TW9pc2VzIiwiaWF0IjoxNjExMTkxMzgwLCJleHAiOjE2MTExOTMxODB9.DiTUX-tHO_P-76CIXLlJ-3y8Wk7NrXAGTQhOjRxXqw4
+###
+
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+    "username": "moche123",
+    "password": "HolaSoyMoises"
+}
+###
+POST http://localhost:3000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vY2hlMTIzIiwicGFzc3dvcmQiOiJIb2xhU295TW9pc2VzIiwiaWF0IjoxNjExMTkxMzgwLCJleHAiOjE2MTExOTMxODB9.DiTUX-tHO_P-76CIXLlJ-3y8Wk7NrXAGTQhOjRxXqw4
+###
