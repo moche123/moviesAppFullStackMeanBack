@@ -15,6 +15,6 @@ tokenCtrl.authenticateToken = (req, res, next) => {
     })
 }
 tokenCtrl.generateAccessToken = (user) => {
-    return jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{expiresIn:time})
+    return jwt.sign(user,process.env.ACCESS_TOKEN_SECRET/* ,{expiresIn:time} */)
 }
 module.exports = tokenCtrl;

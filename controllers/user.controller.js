@@ -7,14 +7,16 @@ const userCtrl = {}
 
 userCtrl.signin = async(req,res)=>{
     const { username,password } = req.body
-    console.log(req.body)
+    //console.log(req.body)
     const searchedUser = await User.findOne({"username":username,"password":password})
-    console.log(searchedUser)
+    //console.log(searchedUser)
     if(searchedUser){
         const accessToken = generateAccessToken({username:username,password:password})
+        console.log("Token: ", accessToken)
         res.status(200).json({accessToken:accessToken})
     }else{
-        res.json({ message : "User not found" });
+        console.log("No hay token")
+        res.status(403).json({ message : "User not found" });
     }
 }
 

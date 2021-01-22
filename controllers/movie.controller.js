@@ -11,13 +11,13 @@ movieCtrl.getAllMovies = async(req,res)=>{
 
 
 
-/* movieCtrl.createMovie = async(req,res)=>{
-    console.log(Movie);
+ movieCtrl.createMovie = async(req,res)=>{
+    
     const {title,description,gender,urlImage} = req.body;
     const newMovie = new Movie({title,description,gender,urlImage});
     await newMovie.save();
     res.json(newMovie);
-} */
+} 
 
 
 module.exports = movieCtrl;

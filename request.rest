@@ -9,7 +9,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/movies
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vY2hlMTIzIiwicGFzc3dvcmQiOiJIb2xhU295TW9pc2VzIiwiaWF0IjoxNjExMTkxMzgwLCJleHAiOjE2MTExOTMxODB9.DiTUX-tHO_P-76CIXLlJ-3y8Wk7NrXAGTQhOjRxXqw4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vY2hlMTIzIiwicGFzc3dvcmQiOiJIb2xhU295TW9pc2VzIiwiaWF0IjoxNjExMjg2MjExfQ.Y0MdbD3c6lgDTGc__rjchm8gVhbNaXMEByuqos_2rGE
 ###
 
 POST http://localhost:3000/signin

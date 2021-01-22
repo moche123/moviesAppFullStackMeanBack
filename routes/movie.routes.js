@@ -6,11 +6,12 @@ app.use(express.json())
 
 
 const {
-    getAllMovies
+    getAllMovies,
+    createMovie
 } = require('../controllers/movie.controller')
 
 app.get('/movies',authenticateToken,getAllMovies)
-
+app.post('/movies',createMovie)
 
 
 module.exports = app
